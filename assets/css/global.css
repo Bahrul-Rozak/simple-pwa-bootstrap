@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+       font-family: 'Quicksand', sans-serif;
+       color: limegreen;
+}
+
+
+.bg-dark {
+       background: black !important;
+}
+
+h1,
+h2 {
+       color: limegreen;
+}
+
+.breadcrumb {
+       display: flex;
+       flex-wrap: wrap;
+       padding: .5rem 1rem;
+       margin-bottom: 1rem;
+       list-style: none;
+       background-color: black;
+       border-radius: 0px !important;
+}
+
+.breadcrumb a {
+       color: limegreen;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+       display: inline-block;
+       padding-right: .5rem;
+       color: limegreen;
+       content: "/";
+}
+
+.breadcrumb-item.active {
+       color: limegreen;
+}
+
+.text {
+       text-align: center;
+       color: limegreen;
+       animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+       white-space: nowrap;
+       overflow: hidden;
+       border-right: 5px solid;
+}
+
+@keyframes typing {
+       from {
+              width: 0
+       }
+}
+
+@keyframes blink {
+       50% {
+              border-color: transparent
+       }
+}
+
+
+
+.timeline-steps {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap
+}
+
+
+.timeline-steps .timeline-step {
+       align-items: center;
+       display: flex;
+       flex-direction: column;
+       position: relative;
+       margin: 1rem
+}
+
+#btn-back-to-top {
+       position: fixed;
+       bottom: 20px;
+       right: 20px;
+       display: none;
+}
+
+
+h6 a:hover {
+       color: limegreen;
+}
+
+.fa {
+       font-size: 28px;
+       color: white;
+}
+
+@media (min-width:768px) {
+       .timeline-steps .timeline-step:not(:last-child):after {
+              content: "";
+              display: block;
+              border-top: .25rem dotted limegreen;
+              width: 3.46rem;
+              position: absolute;
+              left: 7.5rem;
+              top: .3125rem
+       }
+
+       .timeline-steps .timeline-step:not(:first-child):before {
+              content: "";
+              display: block;
+              border-top: .25rem dotted limegreen;
+              width: 3.8125rem;
+              position: absolute;
+              right: 7.5rem;
+              top: .3125rem
+       }
+}
+
+.timeline-steps .timeline-content {
+       width: 10rem;
+       text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+       border-radius: 1.5rem;
+       height: 1rem;
+       width: 1rem;
+       display: inline-flex;
+       align-items: center;
+       justify-content: center;
+       background-color: limegreen
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+       content: "";
+       background-color: limegreen;
+       display: inline-block;
+       height: 3rem;
+       width: 3rem;
+       min-width: 3rem;
+       border-radius: 6.25rem;
+       opacity: .5
+}
